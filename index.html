@@ -12,14 +12,17 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css">
+
+
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Carl Jordan Cruz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand d-lg-none" href="#landing">Carl Jordan Cruz</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,41 +34,30 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#tools">Tools</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#tools">Tools</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="sidebar">
-        <h2>Links</h2>
-        <ul>
-            <li><a href="https://www.facebook.com/carljordan.cruz/">Facebook</a></li>
-            <li><a href="https://www.instagram.com/jowdan.cruz/">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/carl-jordan-cruz-3b939b23b/">LinkedIn</a></li>
-            <li><a href="https://gitlab.com/carljordan.cruz6">GitLab</a></li>
-        </ul>
-    </div>
-
-    <!-- Header Section -->
-    <header class="hero bg-primary text-white text-center py-5">
+    <header class="bg-primary text-white text-center py-5">
         <div class="container">
-            <h1 class="display-4">Welcome to My Portfolio</h1>
+            <h1 class="display-4 p-2 mt-5">Welcome to My Portfolio</h1>
             <p class="lead">I am a passionate developer with a love for coding.</p>
         </div>
     </header>
 
-    <!-- About Section -->
+    <!-- Landing Section -->
     <section id="about" class="p-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <h2 class="display-4">About Me</h2>
-                    <p>I have spent the past three years working in the BPO industry. However, I have come to realize that this field does not align with my true passion. That being said, I have made the decision to transition into the world of Web Development in order to explore my creativity and design user-friendly layouts. Additionally, I am eager to learn coding techniques that will allow me to create unique website effects.</p>
+                    <p class="mt-4">I have spent the past three years working in the BPO industry. However, I have come to realize that this field does not align with my true passion. That being said, I have made the decision to transition into the world of Web Development in order to explore my creativity and design user-friendly layouts. Additionally, I am eager to learn coding techniques that will allow me to create unique website effects.</p>
                 </div>
                 <div class="col-lg-6 carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -87,7 +79,7 @@
     <!-- Projects Section -->
     <section id="projects" style="padding: 3rem; margin-bottom: 3rem;" class="bg-dark text-center">
         <div class="container">
-            <h2 class="display-4 text-center text-white">My Projects</h2>
+            <h2 class="display-4 text-center text-white mb-5">My Projects</h2>
             <div class="row"> 
                 <div class="col-lg-6 mb-12">
                     <div class="card">
@@ -109,34 +101,8 @@
         </div>    
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-primary">
-        <div class="container">
-            <h2 class="display-4 text-center">Message Me</h2>
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Tools Section -->
-    <section id="tools" class="py-5">
+    <section id="tools" class="py-5 mb-5">
         <div class="container">
             <h2 class="display-4 text-center">Tools</h2>
                 <div class="row">
@@ -172,15 +138,74 @@
         </div>
     </section>
     
+    <!-- Contact Section -->
+    <section id="contact" class="container-fluid bg-light">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-xl-4 col-lg-8 col-md-8 col-sm-12 text-center text-white mt-5 mb-5">
+            <h3 class="text-dark">Message Me</h3>
+                <form action="www.google.com" id="form-col" class="bg-primary">
+                <div class="form-group m-3">
+                    <label for="name" class="mt-2">Name</label>
+                    <input type="text" class="form-control" name="name" required placeholder="Enter name">
+                </div>
+                <div class="form-group m-3">
+                    <label for="emailAddress">Email</label>
+                    <input type="email" class="form-control" name="emailAddress" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group m-3">
+                    <label for="number">Contact Number</label>
+                    <input type="number" class="form-control" name="number" placeholder="+63 900 000 000" required>
+                </div>
+                <div class="form-group m-3">
+                    <label for="concern">Language</label>
+                    <select name="concern" class="form-control" required>
+                        <option value="quotation">HTML</option>
+                        <option value="report">CSS</option>
+                    </select>
+                </div>
+                <div class="form-group m-3">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+                </div>
+
+                <button type="button" class="btn btn-dark mb-2 mr-5" data-toggle="modal" data-target="#modalDiv">Send</button>
+                <button type="reset" class="btn btn-primary mb-2 ml-5">Reset</button>
+
+                <!-- Modal -->
+                <div class="modal fade text-dark" id="modalDiv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                            </button>
+                            </div>
+                                    <div class="modal-body">
+                                        <p>Message Succesfully Sent</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-dark text-white d-flex justify-content-center p-3 mt-4">
+
             <div class="mr-2">&copy; 2023 My Website.</div>
             <div class="ml-3 mr-3">|</div>
             <div class="ml-2">All rights reserved.</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
 </body>
 </html>
+
