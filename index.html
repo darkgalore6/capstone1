@@ -7,51 +7,52 @@
 
     <title>Capstone 1 Development - Developer Portfolio</title>
 
-
+    <!-- CSS External Link -->
     <link rel="stylesheet" type="text/css" href="./index.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="
+    sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Icon Library Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg py-2 navbar-light bg-white sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand d-lg-inline" href="#">
-                <img src="./images/logo.png" alt="logo" class="img-fluid ml-5">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" id="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tools">Tools</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link ml-5" href="#about" id="abouttxt">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-5" href="#projects" id="projectstxt">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-5" href="#tools" id="toolstxt">Tools</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link ml-5" href="#contact" id="contacttxt">Contact</a>
+                </li>
+            </ul>
 
-            <nav class="navbar navbar-white bg-white">
-            <a class="navbar-brand"></a>
-            <form class="form-inline ml-auto my-2 my-lg-0" action="https://www.google.com/search" method="GET" target="_blank">
-            <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-white" type="submit">
-                <img src="./images/search.png">     
-            </button>
+            <form id="googleform" class="form-inline ml-auto" action="https://www.google.com/search" method="GET" target="_blank" role="search">
+                <input type="search" id="query" name="q" placeholder="  Search" aria-label="Search through site content">
             </form>
-        </nav>
-
         </div>
     </nav>
 
@@ -59,162 +60,180 @@
     <header id="landing" class="text-white text-center p-5">
         <div class="container background-container">
             <h1 class="display-4 p-5 mt-5">Welcome to My Portfolio</h1>
-            <p class="lead mt-5">I am Carl Jordan Cruz, a passionate Full Stack Web Developer with a love for coding.</p>
-            <!-- <a href="#" class="btn btn-outline-light mt-2" id="btn-dark">Get Started</a> -->
+            <h5 class="p-2 mt-5">I am Carl Jordan Cruz, a passionate Full Stack Web Developer with a love for coding.</h5>
+            <a href="#about" class="btn btn-outline-light" id="gsbutton">Get Started</a>
         </div>
     </header>
 
-    <section id="about" class="p-5">
-        <div class="container ">
+    <section id="about" class="bg-light">
+        <div class="container-fluid m-5">
             <div class="row">
-                <div class="col-md-6 mx-auto text-center">
-                    <h1 class="display-4 mr-5">About Me</h1>
-                    <p class="mt-4">I have spent the past three years working in the BPO industry. However, I have come to realize that this field does not align with my true passion. That being said, I have made the decision to transition into the world of Web Development in order to explore my creativity and design user-friendly layouts. Additionally, I am eager to learn coding techniques that will allow me to create unique website effects.</p>
+                <div class="col-lg-7 col-md-10 p-5 mb-2" id="meborder">
+                    <h1 class="mt-2" id="aboutme">About Me</h1>
+                    <p class="mt-5" id="description">I have spent the past three years working in the BPO industry. However, I have come to realize that this field does not align with my true passion. That being said, I have made the decision to transition into the world of Web Development in order to explore my creativity and design user-friendly layouts. Additionally, I am eager to learn coding techniques that will allow me to create unique website effects.</p>
                 </div>
-                <div class="col-md-6 mx-auto text-center carousel slide" data-ride="carousel">
+                <div class="col-lg-4 col-md-8 carousel slide ml-auto mr-auto mt-2" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active ml-5">
-                            <img src="./images/profile1.jpeg" class="d-block w-50">
+                        <div class="carousel-item active img-fluid">
+                            <img src="./images/profile1.jpeg" id="profile1" class="w-75">
                         </div>
-                        <div class="carousel-item">
-                            <img src="./images/profile2.jpeg" class="d-block w-50">
+                        <div class="carousel-item img-fluid">
+                            <img src="./images/profile2.jpeg" id="profile2" class="w-75">
                         </div>
-                        <div class="carousel-item">
-                            <img src="./images/profile3.jpeg" class="d-block w-50">
+                        <div class="carousel-item img-fluid">
+                            <img src="./images/profile3.jpeg" id="profile3" class="w-75">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End of Landing Section -->
 
     <!-- Projects Section -->
-    <section id="projects" style="padding: 3rem; margin-bottom: 3rem;" class="bg-dark text-center">
+    <section id="projects" class="bg-dark text-center">
         <div class="container">
-            <h2 class="display-4 text-center text-white mb-5">My Projects</h2>
+            <h2 class="display-4 text-center text-white mb-5">Sample Projects</h2>
             <div class="row"> 
-                <div class="col-lg-6 mb-12">
-                    <div class="card">
-                        <img src="./images/project1.jpg" class="img-fluid">
-                        <div class="card-body">
-                            <p class="card-text">Basic HTML</p>
-                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card m-3">
+                        <img src="./images/project1.jpg" class="img-fluid" id="project1">
                     </div>
                 </div>
-                <div class="col-lg-6 mb-12">
-                    <div class="card">
-                        <img src="./images/project2.png" class="img-fluid">
-                        <div class="card-body">
-                            <p class="card-text">Basic CSS</p>
-                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card m-3">
+                        <img src="./images/project2.jpg" class="img-fluid" id="project2">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card m-3">
+                        <img src="./images/project3.jpg" class="img-fluid" id="project3">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card m-3">
+                        <img src="./images/project4.jpg" class="img-fluid" id="project4">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card m-3">
+                        <img src="./images/project5.jpg" class="img-fluid" id="project5">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card m-3">
+                        <img src="./images/project6.jpg" class="img-fluid" id="project6">
                     </div>
                 </div>
             </div>
         </div>    
     </section>
+    <!-- End of Projects Section -->
 
     <!-- Tools Section -->
-    <section id="tools" class="py-5 mb-5">
-        <div class="container">
-            <h2 class="display-4 text-center">Tools</h2>
+    <section id="tools" class="bg-light">
+        <div class="container text-center">
+            <h2 class="display-4 p-2 mb-5">Tools</h2>
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="card mt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card mt-2" id="htmllogo">
                             <img src="./images/logo-html5.png">
-                            <div class="card-body">
+                            <div class="card-body img-fluid">
+                                <h5>HTML</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card mt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card mt-2" id="csslogo">
                             <img src="./images/logo-css3.png">
-                            <div class="card-body">
+                            <div class="card-body img-fluid">
+                                <h5>CSS</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card mt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card mt-2" id="bslogo">
                             <img src="./images/logo-bootstrap.png">
-                            <div class="card-body">
+                            <div class="card-body img-fluid">
+                                <h5>Bootstrap</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card mt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card mt-2" id="jslogo">
                             <img src="./images/logo-javascript.png">
-                            <div class="card-body">
+                            <div class="card-body img-fluid">
+                                <h5>Javascript</h5>
                             </div>
                         </div>
                     </div>
                 </div>
         </div>
     </section>
+    <!-- End of Tools Section -->
     
     <!-- Contact Section -->
-    <section id="contact" class="container-fluid bg-light">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-xl-4 col-lg-8 col-md-8 col-sm-12 text-center text-white mt-5 mb-5">
-            <h3 class="text-dark">Message Me</h3>
-                <form action="www.google.com" id="form-col" class="bg-primary">
-                <div class="form-group m-3">
-                    <label for="name" class="mt-2">Name</label>
-                    <input type="text" class="form-control" name="name" required placeholder="Enter name">
+    <section id="contact" class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6" id="column1">
+                <div>
+                    <p id="socialmedia">Follow me on social media</p>
                 </div>
-                <div class="form-group m-3">
-                    <label for="emailAddress">Email</label>
-                    <input type="email" class="form-control" name="emailAddress" placeholder="name@example.com" required>
+                <div id="icons">
+                    <a href="https://www.facebook.com/carljordan.cruz/" class="btn">
+                        <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jowdan.cruz/" class="btn">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/carl-jordan-cruz-3b939b23b" class="btn">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/darkgalore6" class="btn">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
                 </div>
-                <div class="form-group m-3">
-                    <label for="number">Contact Number</label>
-                    <input type="number" class="form-control" name="number" placeholder="+63 900 000 000" required>
+            </div>
+            <div class="col-xl-6 bg-dark text-center text-white p-5">
+                <div>
+                    <h4 class="text-white text-center p-4 m-5">Get in touch!</h4>
                 </div>
-                <div class="form-group m-3">
-                    <label for="concern">Language</label>
-                    <select name="concern" class="form-control" required>
-                        <option value="quotation">HTML</option>
-                        <option value="report">CSS</option>
-                    </select>
-                </div>
-                <div class="form-group m-3">
-                <label for="message">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="5"></textarea>
-                </div>
-
-                <button type="button" class="btn btn-dark mb-2 mr-5" data-toggle="modal" data-target="#modalDiv">Send</button>
-                <button type="reset" class="btn btn-primary mb-2 ml-5">Reset</button>
-
-                <!-- Modal -->
-                <div class="modal fade text-dark" id="modalDiv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                            </button>
-                            </div>
-                                    <div class="modal-body">
-                                        <p>Message Succesfully Sent</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
+                <div> 
+                    <form action="https://www.google.com/">
+                        <div class="form-group m-5">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required> 
                         </div>
-                    </div>
+                        <div class="form-group m-5">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="form-group m-5">
+                            <label for="contact">Contact Number</label>
+                            <input type="tel" class="form-control" id="contact" name="contact" placeholder="+63 900 000 0000" required>
+                        </div>
+                        <div class="form-group m-5">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" name="message" id="message" required rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-light mr-5" data-toggle="modal" data-target="#modalDiv">Submit</button>
+                        <button type="reset" class="btn ml-5" id="resetbutton">Reset</button>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
     </section>
+    <!-- End of Contact Section -->
 
     <!-- Footer -->
-    <footer class="bg-dark text-white d-flex justify-content-center p-3 mt-4">
-
-            <div class="mr-2">&copy; 2023 My Website.</div>
+    <footer class="bg-light text-dark d-flex justify-content-center p-3">
+            <span class="mr-2">&copy; 2023 My Website.</span>
             <div class="ml-3 mr-3">|</div>
             <div class="ml-2">All rights reserved.</div>
     </footer>
 
+    <!-- Bootstrap JS Link -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 

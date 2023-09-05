@@ -1,33 +1,123 @@
 * {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+header h1 {
+    font-size: 80px !important;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+#me {
+    font-size: 25px;
+}
+
+#logo {
+    width: 125px;
+    height: 50px;
+}
+
+#abouttxt {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#abouttxt:hover {
+    color: black;
+    transition: .4s;
+    font-size:25px;
+    transition: all 500ms;
+  }
+
+#projectstxt {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#projectstxt:hover {
+    color: black;
+    transition: .4s;
+    font-size:25px;
+    transition: all 500ms;
+  }
+
+#toolstxt {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#toolstxt:hover {
+    color: black;
+    transition: .4s;
+    font-size:25px;
+    transition: all 500ms;
+  }
+
+#contacttxt {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contacttxt:hover {
+    color: black;
+    transition: .4s;
+    font-size:25px;
+    transition: all 500ms;
+  }
+
+#googleform {
+  background-color: grey;
+  width: 190px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0.7;
+}
+
+#query {
+  all: unset;
+  font: 15px system-ui;
+  padding: 10px;
+}
+
+#query::placeholder {
+  color: white;
+  opacity: 0.8; 
+}
+
 #landing {
-    background-image: url('./images/web-development.jpg');
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)
+    ), url('./images/web-development.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 90vh;
-    opacity: 0.9;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    min-height: 95vh;
 }
 
-/*#btn-dark {
-    background-color: grey;
+#gsbutton {
+    background-color: transparent;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.btn:hover {
+#gsbutton:hover {
   animation: glow 1s infinite alternate;
 }
 
@@ -38,4 +128,238 @@ html {
     100% {
         box-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px white;
     }
-}*/
+}
+
+#aboutme {
+    font-size: 60px !important;
+}
+
+#description {
+    font-size: 22px !important;
+}
+
+#meborder {
+    border-width: 1.5rem;
+    border-style: groove;
+    border-top-color: grey;
+    border-bottom-color: grey;
+    border-left-color: lightgrey;
+    border-right-color: lightgrey; 
+}
+
+#meborder:hover {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+#project1:hover {
+    animation: glow 1s infinite alternate;
+}
+
+#project2:hover {
+    animation: glow 1s infinite alternate;
+}
+
+#project3:hover {
+    animation: glow 1s infinite alternate;
+}
+
+#project4:hover {
+    animation: glow 1s infinite alternate;
+}
+
+#project5:hover {
+    animation: glow 1s infinite alternate;
+}
+
+#project6:hover {
+    animation: glow 1s infinite alternate;
+}
+
+#htmllogo:hover {
+    box-shadow: 10px 10px 8px grey;
+    transform: translateY(10px);
+}
+
+#htmllogo::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: ghostwhite;
+    z-index: -1;
+    opacity: 0;
+}
+
+#htmllogo:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+#csslogo:hover {
+    box-shadow: 10px 10px 8px grey;
+    transform: translateY(10px);
+}
+
+#csslogo::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: ghostwhite;
+    z-index: -1;
+    opacity: 0;
+}
+
+#csslogo:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+#bslogo:hover {
+    box-shadow: 10px 10px 8px grey;
+    transform: translateY(10px);
+}
+
+#bslogo::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: ghostwhite;
+    z-index: -1;
+    opacity: 0;
+}
+
+#bslogo:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+#jslogo:hover {
+    box-shadow: 10px 10px 8px grey;
+    transform: translateY(10px);
+}
+
+#jslogo::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: ghostwhite;
+    z-index: -1;
+    opacity: 0;
+}
+
+#jslogo:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+#tools {
+    padding: 15rem;
+}
+
+#projects {
+    padding: 15rem;
+}
+
+#about {
+    padding: 10rem;
+}
+
+#column1 {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.5)
+    ), url('./images/contactbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    flex-shrink: 0;
+}
+
+#socialmedia {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    padding-top: 25rem;
+}
+
+#icons {
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.fa-facebook {
+    color: white;
+    border: none; 
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: #0165E1;
+    transition: .4s;
+    transition: all 500ms;
+}
+
+.fa-instagram {
+    color: white;
+    border: none; 
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+    transition: .4s;
+    transition: all 500ms;
+}
+
+.fa-linkedin {
+    color: white; 
+    border: none;
+    cursor: pointer;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+    transition: .4s;
+    transition: all 500ms;
+}
+
+.fa-github {
+    color: white; 
+    border: none;
+    cursor: pointer;
+}
+
+.fa-github:hover {
+    color: #c9510c;
+    transition: .4s;
+    transition: all 500ms;
+}
+
+#resetbutton:hover {
+    color: white;
+    transition: .4s;
+    transition: all 500ms;
+}
+
+footer span div {
+    font-size: 25px !important;
+}
+
